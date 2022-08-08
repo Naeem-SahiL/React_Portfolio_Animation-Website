@@ -1,0 +1,46 @@
+$primary-clr: #ffd700;
+$bg-navbar: #181818;
+$clr-link: #4d4d4e;
+$clr-h1: #fff;
+$clr-h2: #8d8d8d;
+$clr-hover: #333;
+$clr-input: #115173;
+
+@mixin  applyTags {
+    &::before, &::after{
+        font-family: 'La Belle Aurore';
+        color: $primary-clr;
+        font-size: 18px;
+        position: absolute;
+        opacity: 0.6;
+    }
+
+    &::before{
+        content: '<h1 >';
+        margin-top: -40px;
+        left: 15px;
+    }
+    &::after{
+        content: '</h1 >';
+        margin-top: 18px;
+        margin-left: 20px;
+        
+        animation: fadeIn 1s 1.7s backwards;
+    }
+}
+
+@mixin textZone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+}
+
+@mixin h1 {
+    color: $clr-h1;
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+}

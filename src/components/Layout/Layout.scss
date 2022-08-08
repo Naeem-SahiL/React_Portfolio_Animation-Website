@@ -1,0 +1,66 @@
+@import '../../variables';
+
+.container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    .page {
+        flex: 1;
+        height: 100%;
+        position: relative;
+    }
+
+    .top-tags{
+        top: auto;
+    }
+    .bottom-tags{
+        bottom: 15px;
+    }
+
+    .tags{
+        color: $primary-clr;
+        position: absolute;
+        left: 60px;
+
+        display: block;
+        opacity: 0.6;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+    }
+
+    .bottom-tag-html,.top-tag-html{
+        
+        margin-left: -30px;
+    }
+    .bottom-tag-html{
+        bottom: 0px;
+    }
+    
+}
+
+.page-container{
+    flex: 1;
+
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: relative;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+
+}
+
+
+

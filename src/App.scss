@@ -1,0 +1,44 @@
+
+$primary-color: #ffd700;
+
+@import 'animate.css';
+@import 'loaders.css/src/animations/pacman.scss';
+
+@font-face{
+  font-family: 'Helvetica Neu';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+@font-face{
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+@font-face{
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+input, textarea{
+  font-family: 'Helvetica';
+  color: black;
+}
+.app{
+  width: 100%;
+  height: 100%;
+}
+
+.loader-active{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  display: block;
+
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}
+
